@@ -1,4 +1,4 @@
-*Class Note: 
+*Class Note by Linne
 
 # The Performance Measurement & Evaluation
 
