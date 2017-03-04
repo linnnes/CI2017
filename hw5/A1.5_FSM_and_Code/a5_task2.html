@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<!-- CSS Styles -->
+<style>
+  body {
+    font-family: 'Overpass Mono', monospace;
+  }
+
+  .speech {
+    font-family: 'Overpass Mono', monospace;
+    border-bottom: 5px rgba(255, 235, 59, 1) solid;; 
+    width: 50vw; 
+    padding: 0; 
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42vh;}
+
+ .speech input {
+  font-family: 'Overpass Mono', monospace;
+    border: 0; 
+    font-size: 1.5rem;
+    width: 40vw; 
+    display: inline-block; 
+    height: 40px;}
+
+  .subtitle {
+    width: 50vw;
+    padding: 0;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    }
+
+
+  .speech img {float: right; width: 40px;}
+</style>
+ 
+ 
+<!-- HTML5 Speech Recognition API -->
+<!-- About: This script implements a simple Finate State Machine  -->
+<!-- Author: Maxim Makatchev -->
+
+<script>
+
+  var trendingThisWeek = [ 
+    "Almanac Tap Room, is a Beer Bar, in Mission District.",
+    "Joe & the Juice, is a Juice Bar, in Financial District.",
+    "Bon Nene, is a Japanese Restaurant, in Mission District.",
+    "Jane the Bakery, is a Bakery, in Fillmore District.",
+    "Nightbird, is a Restaurant, in Civic Center"
+    ];
+
+  var state = "initial"
+
+  function startDictation() {
+ 
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+ 
+      var recognition = new webkitSpeechRecognition();
+ 
+      recognition.continuous = false;
+      recognition.interimResults = false;
+ 
+      recognition.lang = "en-US";
+      recognition.start();
+ 
+      recognition.onresult = function(e) {
+        document.getElementById('transcript').value
+                                 = e.results[0][0].transcript;
+        var user_said = e.results[0][0].transcript;
+        recognition.stop();
+
+        var bot_response = decide_response(user_said)
+        speak(bot_response)
+        //`document.getElementById('labnol').submit();
+      };
+ 
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+ 
+    }
+  }
+
+
+
+  function decide_response(user_said) {
+    var response;
+
+    var search_re = /search\s(.+)/i;  
+    // creating a regular expression
+    
+    var search_parse_array = user_said.match(search_re); 
+    // parsing the input string with the regular expression
+    
+    var do_re = /do\s(.+)/i; 
+    var do_parse_array = user_said.match(do_re); 
+
+    var around_re = /around\s(.+)/i; 
+    var around_parse_array = user_said.match(around_re);
+
+    var know_re = /know\s(.+)/i; 
+    var know_parse_array = user_said.match(know_re);  
+
+    var tell_re = /tell\s(.+)/i; 
+    var tell_parse_array = user_said.match(tell_re); 
+
+    var show_re = /show\s(.+)/i; 
+    var show_parse_array = user_said.match(show_re); 
+
+
+    console.log(search_parse_array) 
+    console.log(do_parse_array) 
+    console.log(around_parse_array) 
+    console.log(know_parse_array) 
+    console.log(tell_parse_array) 
+    console.log(show_parse_array) 
+    // let's print the array content to the console log so we understand 
+    // what's inside the array.
+
+
+
+    if (search_parse_array && state === "initial") {
+      response = "ok, searching " + search_parse_array[1] + "Hmm, let's see...... I found!" + trendingThisWeek[Math.floor(Math.random() * trendingThisWeek.length)];
+      State = "initial"
+    } else if (do_parse_array && state === "initial") {
+      response = "ok, searching " + do_parse_array[1] + "Hmm, let's see...... I found!" + trendingThisWeek[Math.floor(Math.random() * trendingThisWeek.length)];
+      State = "initial"
+    } else if (around_parse_array && state === "initial") {
+      response = "ok, searching " + around_parse_array[1] + "Hmm, let's see...... I found!" + trendingThisWeek[Math.floor(Math.random() * trendingThisWeek.length)];
+      State = "initial"
+    } else if (know_parse_array && state === "initial") {
+      response = "ok, searching " + know_parse_array[1] + "Hmm, let's see...... I found!" + trendingThisWeek[Math.floor(Math.random() * trendingThisWeek.length)];
+      State = "initial"
+    } else if (tell_parse_array && state === "initial") {
+      response = "ok, searching " + tell_parse_array[1] + "Hmm, let's see...... I found!" + trendingThisWeek[Math.floor(Math.random() * trendingThisWeek.length)];
+      State = "initial"
+    } else if (show_parse_array && state === "initial") {
+      response = "ok, searching " + show_parse_array[1] + "Hmm, let's see...... I found!" + trendingThisWeek[Math.floor(Math.random() * trendingThisWeek.length)];
+      State = "initial"
+    } else if (user_said.toLowerCase().includes("search") && state === "initial") {
+      response = "Search which city?";
+      state = "selfRepair"
+    } else if (user_said.toLowerCase().includes("san francisco") && state === "initial"
+      || user_said.toLowerCase().includes("san fran") && state === "initial" 
+      || user_said.toLowerCase().includes("san fran") && state === "selfRepair"  
+      || user_said.toLowerCase().includes("yes") && state === "ABByes" 
+      || user_said.toLowerCase().includes("san francisco") && state === "ABByes" 
+      || user_said.toLowerCase().includes("san francisco") && state === "selfRepair") {
+      response = "Okay! Searching: San Francisco......aha...... I found!" + trendingThisWeek[Math.floor(Math.random() * trendingThisWeek.length)];
+      state = "initial"
+    } else if (user_said.toLowerCase().includes("here") 
+      || user_said.toLowerCase().includes("city")
+      || user_said.toLowerCase().includes("no") && state === "selfRepair"
+      || user_said.toLowerCase().includes("no") && state === "ABByes" ) {
+      response = "What's the name of city?";
+      state = "selfRepair"
+    } else if (user_said.toLowerCase().includes("sf") && state === "initial" 
+      || user_said.toLowerCase().includes("sf") && state === "selfRepair" ) {
+      response = "Do you mean San Francisco?";
+      state = "ABByes"
+    } else if (user_said.toLowerCase().includes("thanks")
+      || user_said.toLowerCase().includes("thank")) {
+      response = "Anytime!";
+      state = "initial"
+    } else if (user_said.toLowerCase().includes("bye")) {
+      response = "bye bye!";
+      state = "initial"
+    } else {
+      response = "ummmmmmmmmmmmmm....sorry, try something else?";
+    }
+    return response;
+  }
+  /* 
+   *speak out some text 
+   */
+  function speak(text, callback) {
+    var u = new SpeechSynthesisUtterance();
+    u.text = text;
+    u.lang = 'en-US';
+ 
+    u.onend = function () {
+        if (callback) {
+            callback();
+        }
+    };
+ 
+    u.onerror = function (e) {
+        if (callback) {
+            callback(e);
+        }
+    };
+ 
+    speechSynthesis.speak(u);
+  }
+
+</script>
+
+</head>
+
+<body>
+
+<!-- Search Form -->
+<form id="labnol" method="get" action="https://www.google.com/search">
+  <div class="speech">
+    <input type="text" name="q" id="transcript" placeholder="What's trending this week?" />
+    <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+  </div>
+</form>
+  <div class="subtitle"><p>Ask me a city to begin.</p></div>
+
+
+
+</body>
+
+</html>
