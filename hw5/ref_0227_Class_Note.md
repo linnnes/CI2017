@@ -27,7 +27,7 @@ And here we go:
  
 
 
-### 2. Binary classification:
+### 2. Binary Classification:
 
 - Based on Predicted Condition: `Positive` or `Negative`:
 - The person is a female: `Positive`
