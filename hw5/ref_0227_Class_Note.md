@@ -12,12 +12,14 @@
 
 > And he picked 50 people— 20 females + 30 males.
 
+And here we go:
+
 ---
 
 ### 1. Accuracy (ACC):
 
 - (He picked what he should be picked) + (He didn't picked what he shouldn't be picked) / Total
-- 20 + 50 / 100 = 70%
+- (20 + 50) / 100 = 70%
 
 - `Accuracy (ACC) = Σ True positive + Σ True negative / Σ Total population`
 
@@ -60,9 +62,9 @@
 
 > "Your Correct Prediction / All the *correct fact*
 
-- Recall = (Predicted is a female) / (Is a female (TP)) + (Is *ACTUALLY* a female (FN)) = 20 / 20 + 0 = 100%
+- Recall = (Predicted is a female) / (Is a female (TP)) + (Is *ACTUALLY* a female (FN)) = 20 / (20 + 0) = 100%
 
-- `Recall (R) = TP / TP + FN`
+- `Recall (R) = TP / (TP + FN)`
 
 
 ![Precision and Recall by Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/350px-Precisionrecall.svg.png)
@@ -76,7 +78,7 @@
 
 - False Positive Rate (FPR) ("False Alarm Rate") `FPR = FP / (FP + TN)`
  
-![rfr](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/ROC_space-2.png/350px-ROC_space-2.png)
+![ROCcurve](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/ROC_space-2.png/350px-ROC_space-2.png)
 
 - Based on the example above:
 	- TPR = Hit Rate = TP / (TP + FN) = 20 / (20 + 0) = 1
