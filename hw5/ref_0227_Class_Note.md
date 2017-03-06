@@ -60,7 +60,7 @@ And here we go:
 
 ### 4. Recall: 
 
-> "Your Correct Prediction / All the *correct fact*
+> "Your Correct Prediction / All the *correct fact*"
 
 - Recall = (Predicted is a female) / (Is a female (TP)) + (Is *ACTUALLY* a female (FN)) = 20 / (20 + 0) = 100%
 
