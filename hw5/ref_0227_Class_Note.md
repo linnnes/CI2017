@@ -16,7 +16,7 @@
 
 ### 1. Accuracy (ACC):
 
-- (He picked what he should picked) + (He didn't picked what he shouldn't picked) / Total
+- (He picked what he should be picked) + (He didn't picked what he shouldn't be picked) / Total
 - 20 + 50 / 100 = 70%
 
 - `Accuracy (ACC) = Σ True positive + Σ True negative / Σ Total population`
