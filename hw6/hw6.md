@@ -18,9 +18,9 @@ You can find more about the way the animated character is built by reading [its 
 ### To help you understand the code:
 
 
-1. Replace the graphics with your own. Make your own animated character and give it a name.
+- [x] 1. Replace the graphics with your own. Make your own animated character and give it a name.
 
-2. Find where in verbal.js the following behaviors are called:
+- [ ] 2. Find where in verbal.js the following behaviors are called:
  	- jump
 	- breath rate increase/decrease
 	- blink rate increase/decrease
@@ -34,11 +34,11 @@ You can find more about the way the animated character is built by reading [its 
 	- blink rate increase/decrease
 	- eye color setting
 
-3. Edit the behaviors in verbal.js and nonverbal.js so that the eyes of the character are RED with the character is listening.
+- [ ] 3. Edit the behaviors in verbal.js and nonverbal.js so that the eyes of the character are RED with the character is listening.
 
-4. Add your latest task or non-task oriented chatbot code from the previous homework into verbal.js. Make sure it works with the animated character.
+- [ ] 4. Add your latest task or non-task oriented chatbot code from the previous homework into verbal.js. Make sure it works with the animated character.
 
-5. Submit your work to your own directory on github, called hw6. (P.S. Add a screenshot of your embodied character to the hw6 directory at your github.)
+- [ ] 5. Submit your work to your own directory on github, called hw6. (P.S. Add a screenshot of your embodied character to the hw6 directory at your github.)
 
 
 ---
