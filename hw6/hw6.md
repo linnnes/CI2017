@@ -2,7 +2,7 @@
 
 ##1. Conversational embodied character
 
-We are moving towards studying nonverbal behaviors. The example code for the conversational embodied character that we will be working with is located at [here (url updated)](https://github.com/maxipesfix/coversational_interfaces_spring_2017/tree/master/embodied). 
+We are moving towards studying nonverbal behaviors. The example code for the conversational embodied character that we will be working with is located at [here (*url updated)](https://github.com/maxipesfix/coversational_interfaces_spring_2017/tree/master/embodied). 
 Clone the repository or copy the contents of the "embodied" directory to your computer. Study the code:
 
 - verbal.js
