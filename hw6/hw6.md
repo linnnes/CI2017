@@ -20,7 +20,7 @@ You can find more about the way the animated character is built by reading [its 
 
 - [x] 1. Replace the graphics with your own. Make your own animated character and give it a name.
 
-- [ ] 2. Find where in verbal.js the following behaviors are called:
+- [x] 2. Find where in verbal.js the following behaviors are called:
  	- jump
 	- breath rate increase/decrease
 	- blink rate increase/decrease
