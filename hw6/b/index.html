@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mr. Lego is listening...</title>
+    <title>Let's practice interview!</title>
     <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
 
 
@@ -9,7 +9,7 @@
     <style>
     body {
       font-family: 'Overpass Mono', monospace;
-      margin-top: 2rem;
+      margin-top: 0rem;
     }
 
     .speech {
@@ -29,6 +29,7 @@
       width: 40vw; 
       display: inline-block; 
       height: 40px;
+      background-color: transparent;
     }
 
     .subtitle {
@@ -44,10 +45,16 @@
     #canvasDiv {
       display: block;
       margin: auto;
-      width: 80%;
+
     }
 
     .speech img {float: right; width: 40px;}
+
+    #searchForm {
+      position: fixed;
+      top: 5rem;
+      left: 5rem;
+    }
 
 
   </style>
@@ -57,26 +64,26 @@
     <div id="canvasDiv"></div>
 
     <!-- Search Form -->
-    <form id="labnol" method="get" action="https://www.google.com/search">
-      <div class="speech">
-        <input type="text" name="q" id="transcript" placeholder="Mr. Lego is listening..." />
-        <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
-      </div>
-    </form>
-      <div class="subtitle"><p>Click on the microphone and speak</p></div>
+    <div id="searchForm">
+      <form id="labnol" method="get" action="https://www.google.com/search">
+        <div class="speech">
+          <input type="text" name="q" id="transcript" placeholder="Practice interview with me." />
+          <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+        </div>
+      </form>
+      
+      <div class="subtitle"><p>Behavirol Questions | Oddball Questions</p></div>
+    </div>
+
 
 
     <script type="text/javascript" src="nonverbal.js"></script>
     <script type="text/javascript" src="verbal.js"></script>
     <script type="text/javascript">
-    	prepareCanvas(document.getElementById("canvasDiv"), 1000, 600);
+    	prepareCanvas(document.getElementById("canvasDiv"), 1000, 1000);
 		  document.getElementById("canvasDiv").onmousedown = function() { 
 			 jump(); 
       }
     </script>
   </body>
-<<<<<<< Updated upstream
 </html>
-=======
-</html>
->>>>>>> Stashed changes

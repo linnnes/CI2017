@@ -16,7 +16,7 @@
 var canvas;
 var context;
 var images = {};
-var totalResources = 5;
+var totalResources = 3;
 var numResourcesLoaded = 0;
 var fps = 30;
 var breathInc = 0.1;
@@ -35,6 +35,8 @@ var fpsInterval = setInterval(updateFPS, 1000);
 var numFramesDrawn = 0;
 var curFPS = 0;
 var jumping = false;
+
+var lip = 630;
 
 
 function updateFPS() {
@@ -65,11 +67,10 @@ function prepareCanvas(canvasDiv, canvasWidth, canvasHeight) {
 	
 	// load the images
 	// [!] change resouces and then change [totalResources]
-	loadImage("body");
-	loadImage("hat");		
-	loadImage("arm-jump");
-	loadImage("arm");
-	loadImage("armRight");
+
+	loadImage("pbody");
+	loadImage("parmleft");
+	loadImage("parmright");
 
 }
 
@@ -102,36 +103,22 @@ function redraw() {
   // clears the canvas
   canvas.width = canvas.width; 
 
-  if (jumping) {
-	context.drawImage(images["armRight"], x + 325, y + 200 - breathAmt);
-  } else {
-	context.drawImage(images["armRight"], x + 325, y + 200 - breathAmt);
-  } 
+  context.drawImage(images["pbody"], x , y);
 
-  context.drawImage(images["body"], x + 320, y + 120);
-
-
-  // Draw shadow
-  //---- ? why set [var jumping = false]?
-  // jumping variable is defined
-  if (jumping) {
-	drawEllipse(x + 500, y + 550, 100 - breathAmt, 4);
-  } else {
-	drawEllipse(x + 500, y + 550, 160 - breathAmt, 6);
-  }
-
-  if (jumping) {
-  	  context.drawImage(images["hat"], x + 400, y + 20 - breathAmt);
-  } else {
-  	  context.drawImage(images["hat"], x + 400, y + 18 - breathAmt);
-  }
 
   // Left Eye
-  drawEllipse(x + 450, y + 150 - breathAmt, 10, curEyeHeight, curEyeColor); 
+  drawEllipse(x + 360, y + 600 - breathAmt, 10, curEyeHeight, curEyeColor); 
 
   // Right Eye
-  drawEllipse(x + 480, y + 158 - breathAmt, 10, curEyeHeight, curEyeColor); 
+  drawEllipse(x + 380, y + 600 - breathAmt, 10, curEyeHeight, curEyeColor); 
 
+
+  context.beginPath();
+  context.moveTo(360, 620);
+  context.bezierCurveTo(360, lip, 380, lip, 380, 620);
+  context.lineWidth = 2;
+  context.stroke();
+  
 
   // noticed the y is changing here.
   if (jumping) {
@@ -139,11 +126,16 @@ function redraw() {
   }
 
   if (jumping) {
-	context.drawImage(images["arm-jump"], x + 400, y + 220 - breathAmt);
+	context.drawImage(images["parmleft"], x + 250, y + 600 - breathAmt);
   } else {
-	context.drawImage(images["arm"], x + 500, y + 220 - breathAmt);
+	context.drawImage(images["parmleft"], x + 255, y + 600 - breathAmt);
   }
 
+  if (jumping) {
+	context.drawImage(images["parmright"], x + 400, y + 550 - breathAmt);
+  } else {
+	context.drawImage(images["parmright"], x + 400, y + 550 - breathAmt);
+  } 
 
 
 }
@@ -168,8 +160,9 @@ function drawEllipse(centerX, centerY, width, height, color) {
  
   context.fillStyle = color;
   context.fill();
-  context.stroke();
   context.lineWidth = 2;
+  context.stroke();
+
   context.closePath();	
 }
 
@@ -237,8 +230,4 @@ function land() {
 	
   jumping = false;
 
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
