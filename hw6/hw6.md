@@ -1,11 +1,11 @@
 # HW6
 
-[1. Instruction](#instruction)  |   [2. Submission](#submission)
+[I. Instruction](#instruction)  |   [II. Submission](#submission)
 
 ---
 
 
-## 1. Instruction  <a id="instruction"></a>
+## I. Instruction  <a id="instruction"></a>
 
 ### 1. Conversational embodied character
 
@@ -43,9 +43,9 @@ You can find more about the way the animated character is built by reading [its 
 
 - [x] 3. Edit the behaviors in verbal.js and nonverbal.js so that the eyes of the character are RED with the character is listening.
 
-- [ ] 4. Add your latest task or non-task oriented chatbot code from the previous homework into verbal.js. Make sure it works with the animated character.
+- [x] 4. Add your latest task or non-task oriented chatbot code from the previous homework into verbal.js. Make sure it works with the animated character.
 
-- [ ] 5. Submit your work to your own directory on github, called hw6. (P.S. Add a screenshot of your embodied character to the hw6 directory at your github.)
+- [x] 5. Submit your work to your own directory on github, called hw6. (P.S. Add a screenshot of your embodied character to the hw6 directory at your github.)
 
 
 
@@ -57,7 +57,12 @@ Prepare a demo of your project work so far to be presented next Monday. The demo
 ---
 
 
-## 2. Submission  <a id="submission"></a>
+## II. Submission  <a id="submission"></a>
+
+	### a. The eyes are red while it's listening
+	
+	
+	### b. Integrated with non-task chatbot
 
 
 
