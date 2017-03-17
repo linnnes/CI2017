@@ -61,6 +61,7 @@ Prepare a demo of your project work so far to be presented next Monday. The demo
 ## II. Submission Screenshots  <a id="submission"></a>
 
 ### a. The eyes are red while it's listening
+![The eyes are red while it's listening](https://github.com/linnnes/CI2017/blob/master/hw6/a.gif?raw=true)
 	
 	
 ### b. Integrated with non-task chatbot
