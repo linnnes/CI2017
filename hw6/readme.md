@@ -65,7 +65,7 @@ Prepare a demo of your project work so far to be presented next Monday. The demo
 	
 	
 ### b. Integrated with non-task chatbot - Interview Plant Bot
-![Integrated with non-task chatbot - Interview Plant Bot](https://github.com/linnnes/CI2017/blob/master/hw6/a.gif?raw=true)
+![Integrated with non-task chatbot - Interview Plant Bot](https://github.com/linnnes/CI2017/blob/master/hw6/b.gif?raw=true)
 
 
 
