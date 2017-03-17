@@ -34,7 +34,7 @@ You can find more about the way the animated character is built by reading [its 
 	- blink rate increase/decrease
 	- eye color setting
 
-- [ ] 3. Edit the behaviors in verbal.js and nonverbal.js so that the eyes of the character are RED with the character is listening.
+- [x] 3. Edit the behaviors in verbal.js and nonverbal.js so that the eyes of the character are RED with the character is listening.
 
 - [ ] 4. Add your latest task or non-task oriented chatbot code from the previous homework into verbal.js. Make sure it works with the animated character.
 
