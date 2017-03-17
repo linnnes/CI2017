@@ -1,8 +1,9 @@
-# HW6
+# HW6 
 
-[I. Instruction](#instruction)  |   [II. Submission](#submission)
+[I. Instruction](#instruction)   
 
----
+[II. Submission](#submission)
+
 
 
 ## I. Instruction  <a id="instruction"></a>
@@ -57,12 +58,12 @@ Prepare a demo of your project work so far to be presented next Monday. The demo
 ---
 
 
-## II. Submission  <a id="submission"></a>
+## II. Submission Screenshots  <a id="submission"></a>
 
-	### a. The eyes are red while it's listening
+### a. The eyes are red while it's listening
 	
 	
-	### b. Integrated with non-task chatbot
+### b. Integrated with non-task chatbot
 
 
 
