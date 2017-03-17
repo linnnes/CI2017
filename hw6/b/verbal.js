@@ -37,6 +37,13 @@ var fastBreathInc = 0.6
 var slowTimeBetweenBlinks = 4000
 var fastTimeBetweenBlinks = 500
 
+// audio
+var audio = new Audio('close.mp3');
+function playSound() {
+    audio.play();
+}
+
+
 function startDictation() {
 
   if (window.hasOwnProperty('webkitSpeechRecognition')) {
@@ -69,6 +76,9 @@ function startDictation() {
 
       var bot_response = decide_response(user_said)
       speak(bot_response)
+
+      // Play sound effect, and delay 2.5s
+      setTimeout(playSound, 2500)
 
       //`document.getElementById('labnol').submit();
     };
