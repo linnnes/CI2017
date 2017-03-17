@@ -1,11 +1,12 @@
 # HW6
 
 [1. Instruction](#instruction)
+
 [2. Submission](#submission)
 
-(#instruction)
 
-## 1. Instruction
+
+## 1. Instruction  <a id="instruction"></a>
 
 ### 1. Conversational embodied character
 
@@ -57,9 +58,7 @@ Prepare a demo of your project work so far to be presented next Monday. The demo
 ---
 
 
-(#submission)
-
-## 2. Submission
+## 2. Submission  <a id="submission"></a>
 
 
 
