@@ -1,6 +1,13 @@
-#HW6
+# HW6
 
-##1. Conversational embodied character
+[1. Instruction](#instruction)
+[2. Submission](#submission)
+
+(#instruction)
+
+## 1. Instruction
+
+### 1. Conversational embodied character
 
 We are moving towards studying nonverbal behaviors. The example code for the conversational embodied character that we will be working with is located at [here (*url updated)](https://github.com/maxipesfix/coversational_interfaces_spring_2017/tree/master/embodied). 
 Clone the repository or copy the contents of the "embodied" directory to your computer. Study the code:
@@ -15,7 +22,7 @@ You can find more about the way the animated character is built by reading [its 
 
 
 
-### To help you understand the code:
+#### To help you understand the code:
 
 
 - [x] 1. Replace the graphics with your own. Make your own animated character and give it a name.
@@ -41,12 +48,21 @@ You can find more about the way the animated character is built by reading [its 
 - [ ] 5. Submit your work to your own directory on github, called hw6. (P.S. Add a screenshot of your embodied character to the hw6 directory at your github.)
 
 
+
+### 2. Team assignment: 
+
+Prepare a demo of your project work so far to be presented next Monday. The demo should ideally include a prototype that works: it can be a very small piece of your final product, but it should do something. 
+
+
 ---
 
 
-##2. Team assignment: 
+(#submission)
 
-Prepare a demo of your project work so far to be presented next Monday. The demo should ideally include a prototype that works: it can be a very small piece of your final product, but it should do something. 
+## 2. Submission
+
+
+
 
 
 
