@@ -1,9 +1,8 @@
 # HW6
 
-[1. Instruction](#instruction)
+[1. Instruction](#instruction)  |   [2. Submission](#submission)
 
-[2. Submission](#submission)
-
+---
 
 
 ## 1. Instruction  <a id="instruction"></a>
