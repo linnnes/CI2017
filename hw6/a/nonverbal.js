@@ -237,8 +237,6 @@ function land() {
 	
   jumping = false;
 
-<<<<<<< Updated upstream
+
 }
-=======
-}
->>>>>>> Stashed changes
+
