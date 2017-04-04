@@ -14,10 +14,10 @@ You can [read the details about this example and TTS API in general here](http:/
 
 - [x] 1.4 Run your chatbot from HW6 with various values for the following parameters:
 
-  u.volume = 0.5 //between 0.1
-  u.pitch = 2.0 //between 0 and 2
-  u.rate = 1.0 //between 0.1 and 5-ish
-  u.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Karen"; })[0]; //pick a voice
+      u.volume = 0.5 //between 0.1
+      u.pitch = 2.0 //between 0 and 2
+      u.rate = 1.0 //between 0.1 and 5-ish
+      u.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Karen"; })[0]; //pick a voice
 
 *To see the possible values of voices, in addition to "Karen", run your script with the debug console open.
 *Pick the values of the parameters that you like the best with your conversational agent's character.
