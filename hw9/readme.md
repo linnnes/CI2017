@@ -21,10 +21,10 @@ Modify your FSM logic (regular expressions) in verbal.js to match the user_said 
 [Read this paper from our Stanford neighbors Heidy Maldonado and Barabar Hayes-Roth.](https://hci.stanford.edu/publications/2004/CrossCultBelievability0304/CrossCultBelievability0304.pdf)
 
 Have a short write up answering the following questions:
-    1. What is "culture"?
-    2. Why is it useful to express culture?
-    3. How can an agent express culture?
-    4. Many of you have characters that are not human-like (a cat, a burger, etc.) Would you consider them expressing some culture? If yes, why and how would you do that. If no, then why not?
+1. What is "culture"?
+2. Why is it useful to express culture?
+3. How can an agent express culture?
+4. Many of you have characters that are not human-like (a cat, a burger, etc.) Would you consider them expressing some culture? If yes, why and how would you do that. If no, then why not?
 
 ---
 
