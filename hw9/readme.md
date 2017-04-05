@@ -1,6 +1,6 @@
 # Assignment 9
 
-- [ ] 1. Complete all assignments that you have not submitted yet. This Sunday 11:59pm is the hard deadline for all assignments in this class, including this one.
+- [x] 1. Complete all assignments that you have not submitted yet. This Sunday 11:59pm is the hard deadline for all assignments in this class, including this one.
 
 - [ ] 2. Modify your embedded chatbot from Assignment 8 to understand and speak a language different from English.
 
