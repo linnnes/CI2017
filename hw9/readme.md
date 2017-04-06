@@ -2,17 +2,17 @@
 
 - [x] 1. Complete all assignments that you have not submitted yet. This Sunday 11:59pm is the hard deadline for all assignments in this class, including this one.
 
-- [ ] 2. Modify your embedded chatbot from Assignment 8 to understand and speak a language different from English.
+- [x] 2. Modify your embedded chatbot from Assignment 8 to understand and speak a language different from English.
 
-- [ ] 2.1 ASR: find line 
-recognition.lang = "en-US";
+- [x] 2.1 ASR: find line 
+      recognition.lang = "en-US";
 
 in verbal.js and edit it for another supported language code. [Here is a list of supported languages as of 4 years ago](http://stackoverflow.com/a/14302134), more languages might be supported now.
 
-- [ ] 2.2. TTS:
-Find some non-English voices from the list of TTS voices that is printed in the console log (As described in Assignment 8). Make your character speak in that non-English voice. 
+- [x] 2.2. TTS:
+      Find some non-English voices from the list of TTS voices that is printed in the console log (As described in Assignment 8). Make your character speak in that non-English voice. 
 
-- [ ] 2.3 Dialogue:
+- [x] 2.3 Dialogue:
 
 Modify your FSM logic (regular expressions) in verbal.js to match the user_said variable when it returns the language you have chosen (different from English). It make help to print user_said variable into console.log() so that you can see what google ASR returns for that language.
 
