@@ -16,6 +16,8 @@ in verbal.js and edit it for another supported language code. [Here is a list of
 
 Modify your FSM logic (regular expressions) in verbal.js to match the user_said variable when it returns the language you have chosen (different from English). It make help to print user_said variable into console.log() so that you can see what google ASR returns for that language.
 
+![demo.gif](https://github.com/linnnes/CI2017/blob/master/hw9/demo.gif)
+
 - [ ] 3. Earlier we have learned about expressing emotions and personality via a conversational agent. Another dimension that humans tend to perceive and express is cultural background. 
 
 [Read this paper from our Stanford neighbors Heidy Maldonado and Barabar Hayes-Roth.](https://hci.stanford.edu/publications/2004/CrossCultBelievability0304/CrossCultBelievability0304.pdf)
