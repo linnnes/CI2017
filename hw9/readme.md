@@ -18,7 +18,7 @@ Modify your FSM logic (regular expressions) in verbal.js to match the user_said 
 
 ![demo.gif](https://github.com/linnnes/CI2017/blob/master/hw9/demo.gif)
 
-- [ ] 3. Earlier we have learned about expressing emotions and personality via a conversational agent. Another dimension that humans tend to perceive and express is cultural background. 
+- [x] 3. Earlier we have learned about expressing emotions and personality via a conversational agent. Another dimension that humans tend to perceive and express is cultural background. 
 
 [Read this paper from our Stanford neighbors Heidy Maldonado and Barabar Hayes-Roth.](https://hci.stanford.edu/publications/2004/CrossCultBelievability0304/CrossCultBelievability0304.pdf)
 
