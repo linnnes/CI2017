@@ -58,7 +58,7 @@ function decide_response(user_said) {
   var cocinar_re = /cocinar\s(.+)/i;  // creating a regular expression
   var cocinar_parse_array = user_said.match(cocinar_re) // parsing the input string with the regular expression
   
-  console.log(cocinar_parse_array) // let's print the array content to the console log so we understand 
+  console.log(user_said) // let's print the array content to the console log so we understand 
                                 // what's inside the array.
 
   if (cocinar_parse_array && state === "initial") {
@@ -66,7 +66,7 @@ function decide_response(user_said) {
   } else if (user_said.toLowerCase().includes("cocinar") && state === "initial") {
     response = "que quieres cocinar hoy?";
     state = "cocinar_hoy"
-  } else if (user_said.toLowerCase().includes("adios")) {
+  } else if (user_said.toLowerCase().includes("chau") && state === "initial") {
     response = "Chau! Hasta pronto!";
     state = "initial"
   } else if (state === "cocinar_hoy") {
@@ -110,13 +110,13 @@ function speak(text, callback) {
   u.volume = 0.5 //between 0.1
   // A float value between 0 and 1 should be specified here. The default is 1.
   
-  u.pitch = 2 //between 0.0 and 2.0
+  u.pitch = 0.5 //between 0.0 and 2.0
   // This should be a float value between 0 and 2, with a value of 1 being the default.
 
   u.rate = 0.6 //between 0.1 and 5-ish
   // This should be a float value between 0 and 10, the default being 1.
 
-  u.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Jorge"; })[0]; //pick a voice
+  u.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == "Monica"; })[0]; //pick a voice
   // Voice that sounds like Lego: Ellen, Fred (a little bit retarded), Kathy, Maged, Princess, Trinoids, Whisper, Zarvox, 
 
   u.onend = function () {
