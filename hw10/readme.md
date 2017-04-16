@@ -1,9 +1,6 @@
-# Ask Me Surrounding
+### Cactus the SF Guide Bot
 
-
----
-
-Web-based chat-bot
+#### Instruction: Web-based chat-bot
 
 We will put all the chatbots online for outsiders to see (and possibly score). Please update your best bot with the following:
 
